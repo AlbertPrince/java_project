@@ -1,4 +1,4 @@
-package com.company;
+// package com.company;
 
 import java.util.List;
 
@@ -9,13 +9,13 @@ public class Student {
         this.grades = grades;
     }
 
-    public double getAverageGrade () {
+    public double getAverageGrade() {
         double total = 0;
         for (double i : this.grades) {
             total += i;
         }
         double average = total / this.grades.size();
 
-        return  average;
+        return average;
     }
 }

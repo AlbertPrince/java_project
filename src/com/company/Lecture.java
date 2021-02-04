@@ -1,17 +1,17 @@
-package com.company;
+// package com.company;
 
 import java.util.ArrayList;
 
 public class Lecture {
     private ArrayList<Student> students = new ArrayList<>();
 
-    public void enter( Student student) {
+    public void enter(Student student) {
         this.students.add(student);
     }
 
     public double getHighestAverageGrade() {
         double highest = 0;
-        for (Student i: this.students ) {
+        for (Student i : this.students) {
             double current = i.getAverageGrade();
             if (current > highest) {
                 highest = current;
